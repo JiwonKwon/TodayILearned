@@ -23,7 +23,7 @@ iFrame 에서의 CORS(Cross Origin Resource Sharing) 정책으로 인한 차단�
 
 다른 방법으로는 
 
-window.postMessage() 빌트인 함수를 이용하는 방법 (개발단에서의 우회)
+`window.postMessage()` 빌트인 함수를 이용하는 방법 (개발단에서의 우회)
 
 부모 데이터를 자식한테 보내주는 방법이 있다고 함. 
 
@@ -32,6 +32,6 @@ window.postMessage() 빌트인 함수를 이용하는 방법 (개발단에서의
 허용할 Origin을 Access-Control-Allow-Origin 응답 헤더에 넣어주면 된다. 그러면 다른 Origin일지라도 json 데이터와 같은 자원들을 응답고 읽을 수 있게 된다.
 
 - 모든 사이트를 허용하는 경우: "Origin을 `Access-Control-Allow-Origin": *`
-- 특정한 사이트만 허용하는 경우: "Origin을 Access-Control-Allow-Origin": https://www.coding-groot.tistory.com/
+- 특정한 사이트만 허용하는 경우: "Origin을 `Access-Control-Allow-Origin": https://www.coding-groot.tistory.com/`
 
 근데 이 경우는 http라고 막았던것보다는 iframe 에서 막힌 브라우저 문제같다.
