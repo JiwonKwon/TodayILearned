@@ -2,7 +2,7 @@
 
 # 오늘 발생한 일
 
-![day1%202540b85b83f245aa844e2d18c6102adc/_2020-12-29__11.48.50.png](day1%202540b85b83f245aa844e2d18c6102adc/_2020-12-29__11.48.50.png)
+<img width="887" alt="스크린샷 2020-12-29 오전 11 48 50" src="https://user-images.githubusercontent.com/44457591/103271535-d724d180-49fd-11eb-996b-c05d7ce33738.png">
 
 iFrame 에서의 CORS(Cross Origin Resource Sharing) 정책으로 인한 차단으로 팝업(자식)에서 버튼클릭시 부모창 이동이 안됐음.
 
@@ -13,7 +13,7 @@ iFrame 에서의 CORS(Cross Origin Resource Sharing) 정책으로 인한 차단�
 - 부모 DOM에서 자식 DOM이 가지고 있는 함수 또는 프로퍼티를 참조하려고 하는 경우.
 - 자식 DOM에서 부모 DOM이 가지고 있는 함수 또는 프로퍼티를 참조하려고 하는 경우.
 
-![day1%202540b85b83f245aa844e2d18c6102adc/Untitled.png](day1%202540b85b83f245aa844e2d18c6102adc/Untitled.png)
+![Untitled](https://user-images.githubusercontent.com/44457591/103271492-bceaf380-49fd-11eb-826f-92113929fe89.png)
 
 이경우는 프로토콜이 다른 `http` 에서 `https` 로 접근하려 하여 발생. 
 
