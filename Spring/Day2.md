@@ -33,6 +33,3 @@ datasource가 추가되면서 뭐가 꼬인것같은데..^^
 org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mpEntityManagerFactory' defined in class path resource [vine/mb/common/config/MPDBConfig.class]: Initialization of bean failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of class path resource [data-main.sql]: Insert into MB_ADDR
 
 아 넘 춥다 오늘은 걷기운동도 7000보밖에 못했다 ㅠㅠ 넘춥지만 낼도 열공하쟈~.~
-
-
-ㅈㅏㄴ디밭이 안깔려서 테스트..
