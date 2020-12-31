@@ -1,12 +1,10 @@
 회사에서 새로운 Jira 이슈를 할당받았는데. 
-
-[##_Image|kage@bqdRel/btqOvRPE28N/x0eCFqcglLrUccCsnFkH1k/img.png|alignCenter|data-filename="스크린샷 2020-11-30 오후 10.01.18.png" data-origin-width="1086" data-origin-height="66" data-ke-mobilestyle="widthContent"|||_##]
-
-what ? 
+![image](https://user-images.githubusercontent.com/44457591/103407065-708be900-4ba0-11eb-895c-ed1213f2726c.png)
 
 웹개발자라면 알아야할 것 같구 한번쯤 들어는(들어만) 본것같은데 뭔소린지 잘 모르겠어서 잠시 멍때렸다. 
 
-[##_Image|kage@Z2egm/btqOFhUb5xu/AB1xwmLP2PHD2Fnk6wkVKK/img.jpg|alignCenter|data-origin-width="0" data-origin-height="0" data-ke-mobilestyle="widthContent"|||_##]
+![image](https://user-images.githubusercontent.com/44457591/103407044-62d66380-4ba0-11eb-8973-f5e3dbfc9ce5.png)
+what ? 
 
 하지만 차근차근 공부하면 된다 ^.^ 3년차까지 모르는 건 죄가 아니당,, 아늬! 5년차까지로 할랭 
 
@@ -26,7 +24,8 @@ SOP (Same Origin Policy) 란 **똑같은 출처 에서만 Rescoure를 가져올 
 
 URL을 구성하는 각 명칭 및 개념은 아래의 이미지를 참고하자.
 
-[##_Image|kage@bockXx/btqOH9nXBDT/kUMk1GjVB7Xzq4kKw7ojSK/img.png|alignCenter|data-origin-width="0" data-origin-height="0" data-ke-mobilestyle="widthContent"|그냥 주소인줄 알았는데 다 명칭이 있는것.. 모든건 의미가 있는것.. url 주소 나부랭이도 의미가 있었따.||_##]
+![image](https://user-images.githubusercontent.com/44457591/103407079-83062280-4ba0-11eb-8e80-1fce9059c119.png)
+
 
 사실 https 는 암묵적으로 443 http는 80을 의미하므로 포트번호는 생략이 가능하다고 본다. 
 
@@ -48,7 +47,7 @@ SOP로 인해서 같은 출처의 리소스만 쓰게할 순 없었다.
 
 ### (인자한척하는 표정으루)
 
-[##_Image|kage@IqnIF/btqOKYl7xyD/EB6h0vik6KIazSAInUVeP0/img.jpg|alignCenter|data-origin-width="0" data-origin-height="0" width="304" height="NaN" data-ke-mobilestyle="widthContent"|||_##]
+![image](https://user-images.githubusercontent.com/44457591/103407097-9b763d00-4ba0-11eb-9ea1-0349e313e25d.png)
 
 ## _그래서 정해진 CORS 표준_
 
@@ -80,13 +79,15 @@ SOP로 인해서 같은 출처의 리소스만 쓰게할 순 없었다.
 > -   POST 요청의 경우 Content-Tpye이 application/x-www-form-urlencoded, multipart/form-data, text/plain 이 _아니어야 한다. _
 > -   **커스텀 헤더가 포함된 경우 위의 내용을 포함하지 않더라도 사전 요청을 보낼 수 있음. **
 
-[##_Image|kage@c5cBVm/btqON8BybAd/zdyHCi8uMVoFePRkVCMqZ1/img.png|alignCenter|width="613" height="NaN" data-origin-width="0" data-origin-height="0" data-ke-mobilestyle="widthContent"|아이패드 맥북 미친거아냐..이래서 애플생태계를 못벗어나ㅠ 영어못해도 응대 잘해주라고 애플놈들아||_##]
+![image](https://user-images.githubusercontent.com/44457591/103407121-acbf4980-4ba0-11eb-8363-fc0dd96c820f.png)
+
 
 간단하게 개발자 도구에서 테스트 해볼 수 있다.
 
 예시1) tistory 블로그 내에서 jibab.tisotry 리소스를 호출 할 경우
 
-[##_Image|kage@eDTtVI/btqOFiS3mUu/k0jmKpkCxeOITaYZxEru21/img.png|alignCenter|data-filename="스크린샷 2020-11-30 오후 11.02.38.png" data-origin-width="1178" data-origin-height="1294" width="583" height="NaN" data-ke-mobilestyle="widthContent"|||_##]
+![image](https://user-images.githubusercontent.com/44457591/103407141-c3fe3700-4ba0-11eb-81aa-585dcda716e9.png)
+
 
 200OK 응답이 옴
 
@@ -98,7 +99,8 @@ _아시는분 알려주세요 제발...._
 
 (_**CORS 위반**_)
 
-[##_Image|kage@qsVbJ/btqOFjEsbun/CG6L1hqNBpfj3FnJLqgaMk/img.png|alignCenter|data-origin-width="836" data-origin-height="640" data-filename="스크린샷 2020-11-30 오후 11.02.45.png" width="553" height="NaN" data-ke-mobilestyle="widthContent"|||_##]
+![image](https://user-images.githubusercontent.com/44457591/103407155-d4161680-4ba0-11eb-86f8-b42103a323e1.png)
+
 
 Access-Control-Allow-Origin: [https://jibab.tistory.com](https://jibab.tistory.com) 이 다음과 같이 설정되어 있었을 것이다.
 
