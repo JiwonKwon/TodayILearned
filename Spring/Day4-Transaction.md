@@ -71,7 +71,7 @@ _백문이 불여일견 ..... 간단하게 테스트를 만들어서 _propagatio
 
 스프링 트랜잭션 옵션 종류
 
-더보기
+
 
 ```
 /**
@@ -212,44 +212,9 @@ Primary 를 제외하고는 명시적으로 어느쪽의 트랜잭션인지를 �
 
 _참고한 자료들 감사감사 천재개발자분덜_
 
-[woowabros.github.io/experience/2019/01/29/exception-in-transaction.html](https://woowabros.github.io/experience/2019/01/29/exception-in-transaction.html)
+https://woowabros.github.io/experience/2019/01/29/exception-in-transaction.html
 
-[
+https://interconnection.tistory.com/122
 
-응? 이게 왜 롤백되는거지? - 우아한형제들 기술 블로그
+https://interconnection.tistory.com/122
 
-이 글은 얼마 전 에러로그 하나에 대한 호기심과 의문으로 시작해서 스프링의 트랜잭션 내에서 예외가 어떻게 처리되는지를 이해하기 위해 삽질을 해본 경험을 토대로 쓰여졌습니다. 스프링의
-
-woowabros.github.io
-
-
-
-](https://woowabros.github.io/experience/2019/01/29/exception-in-transaction.html)
-
-[interconnection.tistory.com/122](https://interconnection.tistory.com/122)
-
-[
-
-Spring Transaction Exception 상황에서 Rollback 처리하기
-
-스프링을 사용하면서 많은 서비스들이 트랜잭션을 단위로 하는 비즈니스 로직을 구현합니다. 저는 비즈니스 로직을 구현하는 과정에서 많이들 놓치는 Exception이 발생 상황에 대해서 살펴보려고
-
-interconnection.tistory.com
-
-
-
-](https://interconnection.tistory.com/122)
-
-[blog.breakingthat.com/2018/04/03/springboot-transaction-%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98/](http://blog.breakingthat.com/2018/04/03/springboot-transaction-%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98/)
-
-[
-
-SpringBoot – Transaction (트랜잭션) - 조금 늦은, IT 관습 넘기 (JS.Kim)
-
-Transaction (트랜잭션) JDK Dynamic Proxy CGLIB Proxy SpringBoot에서의 설정 및 Transaction 속성 트랜잭션의 속성 1 (전파 – Propagation) 트랜잭션의 속성 2(격리수준-Isolation) 트랜잭션의 속성 3(Rollback, Commit 관련)
-
-blog.breakingthat.com
-
-
-
-](http://blog.breakingthat.com/2018/04/03/springboot-transaction-%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98/)
