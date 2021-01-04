@@ -95,3 +95,31 @@ public class MbMemOAuth extends BaseTimeEntity {
 영속성 넘어렵다
 
 공부할거 추가 !
+
+
++)
+
+```
+spring:
+  profiles: local
+  datasource:
+    data: classpath:data/data-h2.sql # 시작할때 실행시킬 script
+```
+
+boot 시작시 h2에 data 생성이 제대로 되지 않았음
+
+org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+
+h2의 버전 문제였따
+
+[https://www.inflearn.com/questions/17219](https://www.inflearn.com/questions/17219)
+
+build.gradle
+
+compile 'com.h2database:h2:1.4.199'
+
+버전을 변경하니 정상적으로 실행됨
+
++) Entity의 CamelCase 대문자는 테이블 _ 언더바를 구별해줌
+
+MbMemOauth ⇒ MB_MEM_OAUTH로 테이블 생성해준다.
