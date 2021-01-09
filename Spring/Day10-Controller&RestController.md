@@ -11,7 +11,7 @@
 Whitelabel Error PageThis application has no explicit mapping for /error, so you are seeing this as a fallback.Sun Aug 13 14:34:00 KST 2017There was an unexpected error (type=Not Found, status=404).No message available
 ```
 
-톰캣이 인식해야 하는  index.html 파일이나, index.jsp이 아직 없기 떄문이니웹 설정관련만 하면 해결되는 문제이다.
+톰캣이 인식해야 하는  index.html 파일이나, index.jsp이 아직 없어서 웹 설정관련만 하면 해결되는 문제이다.
 
 @Slf4j
 -@Controller
@@ -20,7 +20,7 @@ Whitelabel Error PageThis application has no explicit mapping for /error, so you
 @RequiredArgsConstructor
 public class KakaoLoginController {
 
-문제는 컨트롤러단에 `@Controller` 였다. `@RestController`로 변경하니 잘 됐음 !
+이경우 문제는 컨트롤러단에 `@Controller` 였다. `@RestController`로 변경하니 잘 됐음 !
 
 # @Controller 와 @RestController의 차이
 
