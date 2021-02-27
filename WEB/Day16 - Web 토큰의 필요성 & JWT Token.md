@@ -58,31 +58,31 @@ Claim based?
 
 # Session - Sever Side Authorization
 
-![day14%20-%20Web%20%E1%84%90%E1%85%A9%E1%84%8F%E1%85%B3%E1%86%AB%E1%84%8B%E1%85%B4%20%E1%84%91%E1%85%B5%E1%86%AF%E1%84%8B%E1%85%AD%E1%84%89%E1%85%A5%E1%86%BC%20&%20JWT%20Token%20eb3d9bd8d31144c2bc06d5046b90c799/Untitled.png](day14%20-%20Web%20%E1%84%90%E1%85%A9%E1%84%8F%E1%85%B3%E1%86%AB%E1%84%8B%E1%85%B4%20%E1%84%91%E1%85%B5%E1%86%AF%E1%84%8B%E1%85%AD%E1%84%89%E1%85%A5%E1%86%BC%20&%20JWT%20Token%20eb3d9bd8d31144c2bc06d5046b90c799/Untitled.png)
+![2](https://user-images.githubusercontent.com/44457591/109393742-d9a49880-7966-11eb-9af2-47422f18c0bf.png)
 
 > Cookie와 차이점은 Cookie는 정보를 클라이언트에 저장하고 Session은 정보를 서버에 저장한다.
 
 ### Session Problem 1 - 서버 확장시 세션 정보의 동기화 문제
 
-[https://t1.daumcdn.net/cfile/tistory/2331DD415861FA682D](https://t1.daumcdn.net/cfile/tistory/2331DD415861FA682D)
+![3](https://user-images.githubusercontent.com/44457591/109393914-a7e00180-7967-11eb-8125-6f283a935c0a.png)
 
 > 서버가 스케일아웃 돼서 여러 개가 생기면 각 서버마다 세션 정보가 저장된다.로그인시(서버1), 새로고침(서버2) 로 접근하면 서버는 인증이 안됐다고 판단한다.
 
 ### Session Problem 2 - 서버 / 세션 저장소의 부하
 
-[https://t1.daumcdn.net/cfile/tistory/213D01415861FA6922](https://t1.daumcdn.net/cfile/tistory/213D01415861FA6922)
+![4](https://user-images.githubusercontent.com/44457591/109394105-9519fc80-7968-11eb-9f2d-431c5327f4bc.png)
 
 > 세션을 각 서버에 저장하지 않고 세션 전용 서버, DB에 저장해도 문제가 생긴다.모든 요청 시 해당 서버에 조회해야 한다. DB 부하를 야기할 수 있다.
 
 ### Session Problem 3 - 웹 / 앱 간의 상이한 쿠키-세션 처리 로직
 
-[https://t1.daumcdn.net/cfile/tistory/244C1F415861FA6A14](https://t1.daumcdn.net/cfile/tistory/244C1F415861FA6A14)
+![5](https://user-images.githubusercontent.com/44457591/109394109-96e3c000-7968-11eb-88fc-743b03a36d7a.png)
 
 > 기존의 Client는 웹 브라우저가 유일했다. 그러나 이제는 모바일로 접근하는 경우도 처리해야 한다.웹 / 앱 의 쿠키 처리 방법이 다르고 또 다른 Client 가 생겨나면 쿠키-세션에 맞게 처리해야 한다.
 
 # Token - Self-contained & Stateless
 
-[https://t1.daumcdn.net/cfile/tistory/233AAF415861FA6A23](https://t1.daumcdn.net/cfile/tistory/233AAF415861FA6A23)
+![6](https://user-images.githubusercontent.com/44457591/109394111-98ad8380-7968-11eb-837a-60db9b0212d5.png)
 
 > 앞의 문제를 해결하는 최선의 방법은 토큰이다.토큰은 서버의 상태를 저장하지 않는다. 토큰 자체로 정보를 가지고 있기 때문에 별도의 인증서버가 필요없다. 따라서 요청을 받을 서버 자체에서 인증 프로세스를 수행할 수 있다.또한, JSON 포맷으로 통신하기 때문에 어떤 Client 에서든 Data 통신에 JSON을 이용하면 토큰을 이용할 수 있다.
 
@@ -153,11 +153,11 @@ HMACSHA256(
 
 > JWT는 [Header Payload Signature] 각각 JSON 형태의 데이터를 base 64 인코딩 후 합친다. 아래와 같은 순서로 . 을 이용해 합친다. 최종적으로 만들어진 토큰은 HTTP 통신 간 이용되며, Authorization 이라는 key의 value로서 사용된다.
 
-![https://cloud.githubusercontent.com/assets/9030565/21639513/c8fd1240-d2b3-11e6-8404-e78ccd52493f.PNG](https://cloud.githubusercontent.com/assets/9030565/21639513/c8fd1240-d2b3-11e6-8404-e78ccd52493f.PNG)
+![7](https://user-images.githubusercontent.com/44457591/109394114-99deb080-7968-11eb-9d60-6376c19373a7.png)
 
 ### **JWT 인증 과정**
 
-![https://cloud.githubusercontent.com/assets/9030565/21639528/e53e01ee-d2b3-11e6-86d1-6c67c16841eb.PNG](https://cloud.githubusercontent.com/assets/9030565/21639528/e53e01ee-d2b3-11e6-86d1-6c67c16841eb.PNG)
+![8](https://user-images.githubusercontent.com/44457591/109394115-9ba87400-7968-11eb-8c7f-c48815d403fc.png)
 
 ## **Part 5. Is JWT a Silver bullet?**
 
