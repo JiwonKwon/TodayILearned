@@ -10,4 +10,4 @@
 
 X-Forwarded-For는 이 문제를 해결하기 위해 사용하는 http header 로 squid caching server 에서 처음 사용되었다.
 
-![day17-X-Forwarded-For%2007de4234130b45a7971c24a92217b8dd/Untitled.png](day17-X-Forwarded-For%2007de4234130b45a7971c24a92217b8dd/Untitled.png)
+![ipad](https://user-images.githubusercontent.com/44457591/109515154-1cdb4480-7aea-11eb-9df4-e735a006be80.png)
