@@ -6,6 +6,7 @@
 
 > 코드의 맥락이 코드에 명시적으로 드러나야한다.
 
+
 ```java
 public List<int[]> getThem(){
 
